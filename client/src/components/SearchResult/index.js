@@ -7,7 +7,7 @@ const SearchResult = (props) => {
     <div className="card">
       <div className="card-body player">
         <div className="article">
-          <h3>search results</h3>
+          <h5>search results</h5>
         </div>
       </div>
     </div>
@@ -15,7 +15,7 @@ const SearchResult = (props) => {
     <div className="card">
       <div className="card-body player">
         <div className="article">
-          <h3>Search Results</h3>
+          <h5>search results</h5>
           {props.books.map((book) => {
             return (
               <li className="search-list list-group-item">
@@ -32,10 +32,10 @@ const SearchResult = (props) => {
                   {/* col-9 show information of the book */}
                   <Col size="9" className="bookInfo">
                     <Row>
-                      <h3 className="bookTitle">{book.title}</h3>
+                      <h4 className="bookTitle">{book.title}</h4>
                     </Row>
                     <Row>
-                      <h4 className="bookAuthor">{book.author}</h4>
+                      <h5 className="bookAuthor">{book.author}</h5>
                     </Row>
                     <Row>
                       <p className="bookDescription">{book.description}</p>
@@ -49,11 +49,11 @@ const SearchResult = (props) => {
                     id={book.id}
                     onClick={(event) => props.handleSavedButton(event)}
                   >
-                    Save Book
+                    save book
                   </button>
                   <a href={book.link} target="_blank">
                     <button className="viewBook btn btn-success">
-                      View Book
+                      view book
                     </button>
                   </a>
                 </Row>

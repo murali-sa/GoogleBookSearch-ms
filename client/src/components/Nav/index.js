@@ -4,13 +4,13 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-primary bg-info">
       <a className="navbar-brand" href="/">
-        <h2 className="text-white">google book search</h2>
+        <h5 className="text-white">home</h5>
       </a>
       <div id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item" id="home">
+        <li className="nav-item" id="home">
             <a className="nav-link" href="/">
-              <button type="button" className="btn btn-success text-white">
+              <button type="button" className="btn btn-primary text-white">
                 search books
               </button>
             </a>
